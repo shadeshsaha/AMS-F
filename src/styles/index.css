@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* logo font  */
+.font-logo {
+  font-family: "Kalam", cursive;
+}
+
+/* text primary  */
+.font-primary {
+  font-family: "Poppins", sans-serif;
+}
+
+/* =================== Home Screen =======================*/
+
+.hero-section {
+  background: linear-gradient(#00000059, #000000cf, #0000006b),
+    url("https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/images-s/2021/07_07/gate_family_s_02_m.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+
+.all-drones-hero-section {
+  background: linear-gradient(#00000059, #000000cf, #0000006b),
+    url("https://cdn.wallpapersafari.com/31/59/fxdV0G.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-hero-section {
+  background: linear-gradient(#00000059, #000000cf, #0000006b),
+    url("https://store-guides2.djicdn.com/guides/wp-content/uploads/2019/10/DJI-Mavic-Series-Comparison.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+/* =================== Register Screen  =======================*/
+.register-screen {
+  background: linear-gradient(#00000059, #000000cf, #0000006b),
+    url("https://images.pexels.com/photos/2050718/pexels-photo-2050718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register-container {
+  color: white;
+  backdrop-filter: blur(14px);
+  background-color: rgba(117, 117, 117, 0.062);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 0px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 0px rgba(40, 40, 40, 0.35) solid;
+  border-right: 0px rgba(40, 40, 40, 0.35) solid;
+}
