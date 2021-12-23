@@ -22,19 +22,19 @@ const Testimonial = ({ username, image, review, rating }) => {
             initialRating={`${rating}`}
             readonly
           />
-          <span className="text-gray-600">({rating})</span>
+          <span className="text-gray-600"> &nbsp;&nbsp;</span>
         </div>
         {/* person info  */}
         <div className="flex justify-center items-center space-x-3">
           <img
-            className="w-16 h-16 rounded-full object-cover"
+            className="w-16 h-16 mb-2 rounded-full object-cover"
             src={image}
             alt={username}
           />
-          <h2 className="text-gray-900 font-medium poppins tracking-wider text-sm">
+        </div>
+          <h2 className="text-gray-900 font-bold poppins tracking-wider text-sm">
             {username}
           </h2>
-        </div>
       </div>
     </div>
   );

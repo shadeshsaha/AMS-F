@@ -1,22 +1,29 @@
-## A Website Where You Will Find Your Cherished Custom Super Car Lamborghini.
+## A Place Where You Can Find Your Favourite Gaming Laptop.
 
-**SCIC Project Assignment: Lamborghini** - Best Super Car Lamborghini in the world
+**Republic Of Gamers - Gaming Laptop Zone In Dhaka**
 
 #
 
-## Live Site
+## Live-Site
 
-"Live-Site-Link"
+"Live-Site-Link-Here"
 
 ### Technologies Used
 
-- React
-- React Router
-- Tailwind CSS
-- React Spinners
-- Sweetalert
-- ExpressJS
-- NodeJS
-- MongoDB
-- Firebase
+### Front-End
+
+- React <br>
+- React Router <br>
+- Tailwind CSS <br>
+- React Spinners <br>
+
+### Back-End
+
+- MongoDB <br>
+- ExpressJS <br>
+- NodeJS <br>
+
+### Hosting
+
+- Firebase <br>
 - Heroku

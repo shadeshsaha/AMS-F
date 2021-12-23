@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "61c464f0c3cc7ade45af3b01",
+    "title": "Asus TUF A15",
+    "description": "Asus TUF A15 FA506IC Ryzen 7 4800H RTX3050 4GB Graphics 15.6\" FHD Gaming Laptop",
+    "image": "https://itpalace.com.bd/image/cache/catalog/Products/Laptop/Asus/Gaming/tuf-a15-gray-metal-01-itpjpg-500x500.jpg",
+    "duration": "AMD Ryzen 7",
+    "groupMembers": "NVIDIA RTX 3050",
+    "price": "105,000",
+    "country": "USA"
+  },
+  {
+    "_id": "61c2fc03196e7f98ff596ba5",
+    "title": "Acer Nitro - 5",
+    "description": "Acer Nitro 5 Gaming Laptop, Intel Core i5-7300HQ, GeForce GTX 1050 Ti, 15.6\" Full HD, 8GB DDR4, 256GB SSD, AN515-51-55WL",
+    "image": "https://cdn.pocket-lint.com/r/s/1200x630/assets/images/155244-laptops-review-acer-nitro-5-review-image1-hyqzoedq97.jpg",
+    "duration": "Intel i5",
+    "groupMembers": "NVIDIA GTX 1050-Ti ",
+    "price": "75, 000",
+    "country": "USA"
+  }
+]

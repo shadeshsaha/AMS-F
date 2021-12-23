@@ -6,7 +6,7 @@ const AddNewTourPackage = () => {
     <section className="bg-white rounded-lg shadow-xl p-6 box-border m-12">
       {/* heading  */}
       <div className="flex flex-col space-y-3 mb-4">
-        <h1 className="font-primary text-xl text-gray-700">Launch new drone</h1>
+        <h1 className="font-primary text-xl text-gray-700">Launch New Gaming Laptop Model</h1>
         <div className="w-36 h-1 rounded-full bg-gray-400"></div>
       </div>
 

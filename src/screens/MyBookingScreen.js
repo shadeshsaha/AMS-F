@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { AiOutlineCamera } from "react-icons/ai";
-import { ImAirplane } from "react-icons/im";
+import { HiUsers } from "react-icons/hi";
+import { IoIosSpeedometer } from "react-icons/io";
 import { useHistory } from "react-router-dom";
 import swal from "sweetalert";
 import Navbar from "../components/Navbar/Navbar";
@@ -16,7 +16,7 @@ const MyBookingScreen = () => {
   const history = useHistory();
 
   useEffect(() => {
-    fetch("https://ancient-castle-52925.herokuapp.com/bookings")
+    fetch("http://localhost:5000/booking")
       .then((res) => res.json())
       .then((data) =>
         setMyBookings(data.filter((item) => item.data.email === user.email))
@@ -42,7 +42,7 @@ const MyBookingScreen = () => {
     }).then((willDelete) => {
       if (willDelete) {
         axios
-          .delete(`https://ancient-castle-52925.herokuapp.com/bookings/${id}`)
+          .delete(`http://localhost:5000/booking/${id}`)
           .then((res) => {
             if (res.data.deletedCount > 0) {
               swal("Poof! Booking has been deleted", {
@@ -66,7 +66,7 @@ const MyBookingScreen = () => {
         <section className="my-24 max-w-screen-xl mx-auto px-6">
           <div>
             <p className=" text-gray-900 font-semibold text-5xl text-center ">
-              My Bookings
+              My Booking List
             </p>
             <hr className=" mt-8" />
             {/* <hr className=" my-4 mx-auto" style={{ width: "50%" }} /> */}
@@ -119,10 +119,10 @@ const MyBookingScreen = () => {
                                 </div>
                                 {/* {/_ duration _/} */}
                                 <div className="flex items-center space-x-3">
-                                  <ImAirplane className="text-red-500 text-xl" />
+                                  <IoIosSpeedometer className="text-red-500 text-xl" />
                                   <div className="flex flex-col">
                                     <p className="text-sm font-primary text-gray-700">
-                                      Duration
+                                      Model:
                                     </p>
                                     <span className="text-sm text-gray-500">
                                       {bookings.duration}
@@ -131,10 +131,10 @@ const MyBookingScreen = () => {
                                 </div>
                                 {/* {/_ group _/} */}
                                 <div className="flex items-center space-x-3">
-                                  <AiOutlineCamera className="text-red-500 text-2xl" />
+                                  <HiUsers className="text-red-500 text-2xl" />
                                   <div className="flex flex-col">
                                     <p className="text-sm font-primary text-gray-700">
-                                      Max group photo
+                                      GPU
                                     </p>
                                     <span className="text-sm text-gray-500">
                                       {bookings.groupMembers} peoples

@@ -9,7 +9,7 @@ const ExploreDrones = () => {
   const [dronePack, setDronePack] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/Cars")
+    fetch("http://localhost:5000/Laptop")
       .then((res) => res.json())
       .then((data) => setDronePack(data));
   }, []);
@@ -26,12 +26,10 @@ const ExploreDrones = () => {
           <div className="flex flex-col items-center justify-center h-full">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-logo font-semibold text-white text-center select-none leading-tight">
               Pre-Order <br />
-              Your Favorite Lamborghini Super Car
+              Your Favorite Gaming Laptop
             </h1>
             <p className="my-2 font-primary text-gray-400 text-center text-sm w-96 select-none">
-              Lamborghini technology empowers us to see the future of possible. Learn
-              about our consumer super cars like Lamborghini Aventador, Lamborghini 350 GT, Lamborghini Huracan, and
-              Lamborghini Sesto Elemento.
+            Gaming laptops are basically the same as standard or business laptops only with upgraded features. But it's these upgraded features which make all the difference. A gaming laptop means high speed, huge memory, better graphics, and fast processing power.
             </p>
           </div>
         </Flip>

@@ -8,7 +8,7 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    swal("done!", "Message sent successfully", "success");
+    swal("Done!", "Message sent successfully", "Success");
     reset();
   };
 
@@ -18,7 +18,7 @@ const Contact = () => {
       <Fade left>
         <div className="flex justify-center items-center flex-col">
           <h1 className="font-logo text-gray-800 text-3xl font-semibold">
-            Custom Super Car Lamborghini Manufacture Request
+            Custom Gaming Laptops Request
           </h1>
           <div className="h-1 w-72 bg-gray-400 rounded-full"></div>
         </div>
@@ -33,7 +33,7 @@ const Contact = () => {
               {/* title  */}
               <input
                 className="input-primary"
-                placeholder="Your Name"
+                placeholder="Full Name"
                 {...register("title", { required: true })}
               />
               {/* description  */}
@@ -41,7 +41,7 @@ const Contact = () => {
                 cols="30"
                 rows="9"
                 className="input-primary resize-none"
-                placeholder="Your Message"
+                placeholder="Your Specs"
                 {...register("description", { required: true })}
               ></textarea>
             </div>
@@ -50,20 +50,20 @@ const Contact = () => {
               {/* Image URL  */}
               <input
                 className="input-primary"
-                placeholder="Any Custom Design You Want Or In Your Mind?"
+                placeholder="GPU - Graphics Card"
                 {...register("image", { required: true })}
               />
               {/* duration  */}
               <input
                 className="input-primary"
-                placeholder="Which Exhaust You Will Add?"
+                placeholder="RAM"
                 {...register("duration", { required: true })}
               />
               {/* group members  */}
               <input
                 type="number"
                 className="input-primary"
-                placeholder="Max Numbers Of People It Can Capture"
+                placeholder="SSD"
                 {...register("groupMembers", { required: true })}
               />
               {/* price  */}
@@ -77,7 +77,7 @@ const Contact = () => {
               <input
                 type="text"
                 className="input-primary"
-                placeholder="Your Color"
+                placeholder="Cooling Paste"
                 {...register("color", { required: true })}
               />
               <button className="btn-primary w-36 ml-auto">Send</button>

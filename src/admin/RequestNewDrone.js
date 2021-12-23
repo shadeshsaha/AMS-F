@@ -7,7 +7,7 @@ const RequestNewDrone = () => {
       {/* heading  */}
       <div className="flex flex-col space-y-3 mb-4">
         <h1 className="font-primary text-xl text-gray-700">
-          Request New Model Of Lamborghini
+          Request New Model Of Gaming Laptop
         </h1>
         <div className="w-36 h-1 rounded-full bg-gray-400"></div>
       </div>

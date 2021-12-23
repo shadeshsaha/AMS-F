@@ -7,10 +7,10 @@ const AddNewForm = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     axios
-      .post("https://ancient-castle-52925.herokuapp.com/tours", data)
+      .post("http://localhost:5000/Laptop", data)
       .then((response) => {
         if (response.statusText === "OK") {
-          swal("Success!", "New Car Added successfully", "Success").then(() =>
+          swal("Success!", "New Laptop Added successfully", "Success").then(() =>
             reset()
           );
         }
@@ -38,7 +38,7 @@ const AddNewForm = () => {
             cols="30"
             rows="9"
             className="input-primary resize-none"
-            placeholder="Drone Description"
+            placeholder="Model Description"
             {...register("description", { required: true })}
           ></textarea>
         </div>
@@ -53,14 +53,14 @@ const AddNewForm = () => {
           {/* duration  */}
           <input
             className="input-primary"
-            placeholder="Flight Duration"
+            placeholder="SSD"
             {...register("duration", { required: true })}
           />
           {/* group members  */}
           <input
             type="number"
             className="input-primary"
-            placeholder="Max numbers of people it can capture"
+            placeholder="GPU"
             {...register("groupMembers", { required: true })}
           />
           {/* price  */}
@@ -74,10 +74,10 @@ const AddNewForm = () => {
           <input
             type="text"
             className="input-primary"
-            placeholder="Country Name"
+            placeholder="Brand Name"
             {...register("country", { required: true })}
           />
-          <button className="btn-primary w-36 ml-auto">Launch</button>
+          <button className="btn-primary w-36 ml-auto">Send</button>
         </div>
       </form>
     </div>

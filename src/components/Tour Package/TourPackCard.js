@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineDelete } from "react-icons/ai";
-import { FaTachometerAlt } from "react-icons/fa";
-import { MdPeopleAlt } from "react-icons/md";
+import { GiProcessor } from "react-icons/gi";
+import { HiOutlineCreditCard } from "react-icons/hi";
 import { useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import useBooking from "../../hooks/useBooking";
@@ -23,7 +23,7 @@ const TourPackCard = (props) => {
 
   const [booking, setUser] = useState();
   useEffect(() => {
-    fetch("https://ancient-castle-52925.herokuapp.com/tours")
+    fetch("http://localhost:5000/Laptop")
       .then((res) => res.json())
       .then((data) => setUser(data));
   }, []);
@@ -37,7 +37,7 @@ const TourPackCard = (props) => {
   // ------------------handleDelete
   const handleDelete = (id) => {
     console.log(id);
-    const url = `https://ancient-castle-52925.herokuapp.com/drones/${id}`;
+    const url = `http://localhost:5000/Laptop${id}`;
     fetch(url, {
       method: "DELETE",
     })
@@ -79,19 +79,19 @@ const TourPackCard = (props) => {
         <div className="flex items-center justify-between border-t border-gray-200 border-b  py-4">
           {/* duration  */}
           <div className="flex items-center space-x-3">
-            <FaTachometerAlt className="text-gray-900 text-xl" />
+            <GiProcessor className="text-gray-900 text-xl" />
             <div className="flex flex-col">
-              <p className="text-sm font-primary text-gray-700">Speed Per Hour</p>
+              <p className="text-sm font-primary text-gray-700">Processor</p>
               <span className="text-sm text-gray-500">{duration}</span>
             </div>
           </div>
           {/* group  */}
           <div className="flex items-center space-x-3">
-            <MdPeopleAlt className="text-gray-900 text-2xl" />
+            <HiOutlineCreditCard className="text-gray-900 text-2xl" />
             <div className="flex flex-col">
-              <p className="text-sm font-primary text-gray-700">Members</p>
+              <p className="text-sm font-primary text-gray-700">GPU</p>
               <span className="text-sm text-gray-500">
-                {groupMembers} Peoples
+                {groupMembers} 
               </span>
             </div>
           </div>
@@ -101,7 +101,7 @@ const TourPackCard = (props) => {
       {/* card footer  */}
       <div className="flex items-center justify-between pt-3">
         <h1 className="font-primary font-semibold text-gray-900 text-2xl">
-          ${price}
+        ৳ {price}
         </h1>
         {admin && (
           <div className="flex items-center justify-center space-x-3">

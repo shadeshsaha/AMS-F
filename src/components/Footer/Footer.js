@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const footerLink = [
-    { id: 1, text: "Monday to Saturday" },
-    { id: 2, text: "10AM to 10PM" },
-    { id: 3, text: " Sant'Agata Bolognese, Italy" },
-    { id: 4, text: "Metropolitan City, Italy" },
-    { id: 5, text: "24/7 open" },
+    { id: 1, text: "Thursday to Saturday" },
+    { id: 2, text: "11AM to 8PM" },
+    { id: 3, text: " IDB Bhaban, Dhaka" },
+    { id: 4, text: "Multi Plan, Dhaka" },
+    { id: 5, text: "Motaleb Plaza, Dhaka" },
     { id: 6, text: "Online Payments" },
     { id: 7, text: "Customer Support" },
-    { id: 8, text: "Licensed Instructor" },
-    { id: 9, text: "+ (051)1051-345678" },
-    { id: 10, text: "+ (051)1062-345678" },
-    { id: 11, text: "+ (051)1073-345678" },
-    { id: 12, text: "+ (051)1084-345678" },
+    { id: 8, text: "Licensed Technician" },
+    { id: 9, text: "+ (880)1521-987123" },
+    { id: 10, text: "+ (880)1521-987123" },
+    { id: 11, text: "+ (880)1521-987123" },
+    { id: 12, text: "+ (880)1521-987123" },
   ];
   return (
     <Fade bottom>
@@ -30,11 +30,11 @@ const Footer = () => {
                   alt="logo"
                   className="w-13 h-13"
                 />
-                <h1
+                <span
                   className={`text-3xl font-semibold text-gray-800 select-none font-logo`}
                 >
-                  Lamborghini
-                </h1>
+                  Republic Of Gamers
+                </span>
               </Link>
             </div>
           </div>
@@ -47,11 +47,6 @@ const Footer = () => {
                 {/* list  */}
                 {footerLink.slice(0, 4).map((item) => (
                   <p
-                    // href="*"
-                    // target="_blank"
-                    // rel="noopener noreferrer"
-                    // key={item.id}
-                    // className="text-sm hover:underline"
                   >
                     {item.text}
                   </p>
@@ -66,11 +61,6 @@ const Footer = () => {
                 {/* list  */}
                 {footerLink.slice(4, 8).map((item) => (
                   <p
-                    // href="*"
-                    // target="_blank"
-                    // rel="noopener noreferrer"
-                    // key={item.id}
-                    // className="text-sm hover:underline"
                   >
                     {item.text}
                   </p>
@@ -85,11 +75,6 @@ const Footer = () => {
                 {/* list  */}
                 {footerLink.slice(8, 12).map((item) => (
                   <p
-                    // href="*"
-                    // target="_blank"
-                    // rel="noopener noreferrer"
-                    // key={item.id}
-                    // className="text-sm hover:underline"
                   >
                     {item.text}
                   </p>
@@ -101,7 +86,7 @@ const Footer = () => {
         <div className="bg-gray-900">
           <div className="max-w-screen-xl mx-auto py-4 px-5 flex flex-wrap flex-col justify-center sm:flex-row">
             <p className="text-white text-sm text-center sm:text-left">
-              Copyright &copy; {new Date().getFullYear()} || Lamborghini
+              Copyright &copy; {new Date().getFullYear()} || Republic Of Gamers
               <a
                 href="*"
                 rel="noopener noreferrer"

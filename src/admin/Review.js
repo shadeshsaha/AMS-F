@@ -7,11 +7,11 @@ const Review = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     axios
-      .post("https://ancient-castle-52925.herokuapp.com/testimonials", data)
+      .post("http://localhost:5000/testimonial", data)
       .then((response) => {
         // console.log(response);
         if (response.statusText === "OK") {
-          swal("Success!", "Thanks for your kind words", "success").then(() =>
+          swal("Success!", "Thanks for your kind words", "Success").then(() =>
             reset()
           );
         }
@@ -26,7 +26,7 @@ const Review = () => {
       {/* heading  */}
       <div className="flex flex-col space-y-3 mb-4">
         <h1 className="font-primary text-xl text-gray-700">
-          Share your experience with DJI plus
+          Share Your Experience With Your Gaming Laptop
         </h1>
         <div className="w-36 h-1 rounded-full bg-gray-400"></div>
       </div>
@@ -42,7 +42,7 @@ const Review = () => {
             {/* title  */}
             <input
               className="input-primary"
-              placeholder="your name"
+              placeholder="Your Name"
               {...register("username", { required: true })}
             />
             {/* description  */}
@@ -50,7 +50,7 @@ const Review = () => {
               cols="30"
               rows="9"
               className="input-primary resize-none"
-              placeholder="write here"
+              placeholder="Your Message"
               {...register("review", { required: true })}
             ></textarea>
           </div>
@@ -65,7 +65,7 @@ const Review = () => {
             {/* duration  */}
             <input
               className="input-primary"
-              placeholder="rating out of 5"
+              placeholder="Rating Out Of 5"
               {...register("rating", { required: true })}
             />
             <button className="btn-primary w-36 ml-auto">Submit</button>

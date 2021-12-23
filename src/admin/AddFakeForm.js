@@ -43,14 +43,14 @@ const AddNewForm = () => {
           {/* duration  */}
           <input
             className="input-primary"
-            placeholder="Max Speed"
+            placeholder="SSD"
             {...register("duration", { required: true })}
           />
           {/* group members  */}
           <input
             type="number"
             className="input-primary"
-            placeholder="Max Numbers Of People"
+            placeholder="GPU"
             {...register("groupMembers", { required: true })}
           />
           {/* price  */}
@@ -64,10 +64,10 @@ const AddNewForm = () => {
           <input
             type="text"
             className="input-primary"
-            placeholder="Country Name"
+            placeholder="Brand Name"
             {...register("country", { required: true })}
           />
-          <button className="btn-primary w-36 ml-auto">Launch</button>
+          <button className="btn-primary w-36 ml-auto">Send</button>
         </div>
       </form>
     </div>

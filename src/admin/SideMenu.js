@@ -54,7 +54,7 @@ const SideMenu = ({ setControl, control }) => {
                     className="flex items-center space-x-3"
                     onClick={() => setControl("manageBooking")}
                   >
-                    <span className="ml-2 font-primary">Manage Bookings</span>
+                    <span className="ml-2 font-primary">Manage-Bookings</span>
                   </div>
                 </li>
                 {admin && (
@@ -83,7 +83,7 @@ const SideMenu = ({ setControl, control }) => {
                         onClick={() => setControl("launchNewDrone")}
                       >
                         <span className="ml-2 font-primary">
-                          Launch New Drone
+                          Launch New Gaming Laptop
                         </span>
                       </div>
                     </li>
@@ -102,7 +102,7 @@ const SideMenu = ({ setControl, control }) => {
                         onClick={() => setControl("requestNewDrone")}
                       >
                         <span className="ml-2 font-primary">
-                          Request New Model Of Lamborghini
+                          Request Upcoming Gaming Laptops
                         </span>
                       </div>
                     </li>

@@ -25,7 +25,7 @@ body::-webkit-scrollbar {
 
 .hero-section {
   background: linear-gradient(#00000059, #000000cf, #0000006b),
-    url("https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/images-s/2021/07_07/gate_family_s_02_m.jpg");
+    url("https://i.pinimg.com/originals/31/a4/96/31a496b032055d72bcc18b413e04f622.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 
 .all-drones-hero-section {
   background: linear-gradient(#00000059, #000000cf, #0000006b),
-    url("https://cdn.wallpapersafari.com/31/59/fxdV0G.jpg");
+    url("https://techsive.com/wp-content/uploads/2020/11/best-laptop-gaming-setup-reddit-how-to-build.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,8 +43,7 @@ body::-webkit-scrollbar {
 }
 
 .contact-hero-section {
-  background: linear-gradient(#00000059, #000000cf, #0000006b),
-    url("https://store-guides2.djicdn.com/guides/wp-content/uploads/2019/10/DJI-Mavic-Series-Comparison.jpg");
+  background: linear-gradient(#00000059, #000000cf, #0000006b), url("");
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -54,7 +53,7 @@ body::-webkit-scrollbar {
 /* =================== Register Screen  =======================*/
 .register-screen {
   background: linear-gradient(#00000059, #000000cf, #0000006b),
-    url("https://images.pexels.com/photos/2050718/pexels-photo-2050718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    url("https://sm.pcmag.com/pcmag_in/news/g/gigabyte-o/gigabyte-offers-laptop-gamers-an-external-water-cooled-rtx-3_6472.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

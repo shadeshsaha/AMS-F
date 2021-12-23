@@ -1,6 +1,6 @@
 import React from "react";
-import { ImAirplane } from "react-icons/im";
-import { AiOutlineCamera } from "react-icons/ai";
+import { HiUsers } from "react-icons/hi";
+import { IoIosSpeedometer } from "react-icons/io";
 
 const BookingCard = (props) => {
   const { title, description, image, duration, groupMembers, price, country } =
@@ -34,21 +34,21 @@ const BookingCard = (props) => {
           <div className="flex items-center justify-between py-4">
             {/* duration  */}
             <div className="flex items-center space-x-3">
-              <ImAirplane className="text-red-500 text-xl" />
+              <IoIosSpeedometer className="text-red-500 text-xl" />
               <div className="flex flex-col">
-                <p className="text-sm font-primary text-gray-700">Duration</p>
+                <p className="text-sm font-primary text-gray-700">Max Speed</p>
                 <span className="text-sm text-gray-500">{duration}</span>
               </div>
             </div>
             {/* group  */}
             <div className="flex items-center space-x-3">
-              <AiOutlineCamera className="text-red-500 text-2xl" />
+              <HiUsers className="text-red-500 text-2xl" />
               <div className="flex flex-col">
                 <p className="text-sm font-primary text-gray-700">
-                  Max Group Photo
+                  Max Members
                 </p>
                 <span className="text-sm text-gray-500">
-                  {groupMembers} peoples
+                  {groupMembers} People
                 </span>
               </div>
             </div>

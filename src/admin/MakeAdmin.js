@@ -10,7 +10,7 @@ const MakeAdmin = () => {
     setEmail(data.email);
     const email = data.email;
     const user = { email };
-    fetch("https://ancient-castle-52925.herokuapp.com/admin", {
+    fetch("http://localhost:5000/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -21,11 +21,11 @@ const MakeAdmin = () => {
       .then((data) => {
         console.log(data);
         if (data.matchedCount > 0) {
-          sweetAlert("done", "admin was set successfully", "success");
+          sweetAlert("Done", "Admin was set successfully", "Success");
         }
       })
       .catch((error) => {
-        sweetAlert("Something went wrong!", `${error.message}`, "error");
+        sweetAlert("Something went wrong!", `${error.message}`, "Error");
       });
     reset();
   };
@@ -48,7 +48,7 @@ const MakeAdmin = () => {
           {/* title  */}
           <input
             className="input-primary"
-            placeholder="type admin email"
+            placeholder="Type Admin E-mail"
             {...register("email", { required: true })}
           />
           <button type="submit" className="btn-primary w-36 ml-auto">

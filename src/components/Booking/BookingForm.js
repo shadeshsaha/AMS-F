@@ -16,10 +16,10 @@ const BookingForm = ({ bookings, totalBookingCost }) => {
     const newData = { bookings, data };
     console.log(newData);
     axios
-      .post("https://ancient-castle-52925.herokuapp.com/bookings", newData)
+      .post("http://localhost:5000/booking", newData)
       .then((response) => {
         if (response.statusText === "OK") {
-          swal("Good job!", "Order has been placed", "success").then(() => {
+          swal("Good job!", "Order has been placed", "Success").then(() => {
             reset();
             history.push("/my-bookings");
           });

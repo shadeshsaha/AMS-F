@@ -13,7 +13,7 @@ const Navbar = ({ bg, textColor, width }) => {
 
   const menu = [
     { id: 1, text: "Dashboard", to: "/dashboard" },
-    { id: 2, text: "My Bookings", to: "/my-bookings" },
+    { id: 2, text: "My-Booking", to: "/my-bookings" },
   ];
 
   //handle click
@@ -73,7 +73,7 @@ const Navbar = ({ bg, textColor, width }) => {
                 changeHeader ? "text-gray-800" : `${textColor}`
               } text-3xl font-semibold select-none font-logo`}
             >
-              Lamborghini
+              Republic Of Gamers
             </h1>
           </Link>
         </div>
@@ -147,14 +147,14 @@ const Navbar = ({ bg, textColor, width }) => {
                   className="btn-primary px-3 ml-4"
                   onClick={handleChangeLogin}
                 >
-                  Login
+                  SignIn
                 </button>
               ) : (
                 <button
                   className="btn-primary-2 px-3 ml-4"
                   onClick={handleChangeLogin}
                 >
-                  Login
+                  SignIn
                 </button>
               )}
             </div>

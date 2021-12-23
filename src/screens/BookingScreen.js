@@ -10,7 +10,7 @@ const BookingScreen = () => {
 
   //bookings details
   useEffect(() => {
-    fetch(`https://ancient-castle-52925.herokuapp.com/tours/${id}`)
+    fetch(`http://localhost:5000/Laptop/${id}`)
       .then((res) => res.json())
       .then((data) => setData(data));
   }, [id]);
